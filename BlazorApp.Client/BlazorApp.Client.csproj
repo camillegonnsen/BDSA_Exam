@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MyApp.Core\MyApp.Core.csproj" />
+    <ProjectReference Include="..\BlazorApp.Core\BlazorApp.Core.csproj" />
   </ItemGroup>
 
 </Project>

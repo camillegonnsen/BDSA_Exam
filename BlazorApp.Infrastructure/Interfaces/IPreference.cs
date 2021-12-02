@@ -2,7 +2,7 @@ using BlazorApp.Core;
 
 namespace Infrastructure{
 
-    public interface IPreferences
+    public interface IPreference
     {
         ISet<Language>? Languages{get;set;}
         ISet<WorkDay>? WorkDays{get;set;}

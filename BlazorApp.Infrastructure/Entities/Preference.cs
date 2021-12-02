@@ -3,7 +3,7 @@ using Infrastructure;
 
 namespace Infrastructure
 {
-    public class Preferences : IPreferences
+    public class Preference : IPreference
     {
         public ISet<Language>? Languages {get;set;}
         public ISet<WorkDay>? WorkDays {get;set;}

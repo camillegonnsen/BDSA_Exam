@@ -5,8 +5,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BlazorApp.Core{
 
-    public record struct ProjectDTO(
-        [Required, StringLength(30)]
+    public record struct PreferenceDTO(
+        /* [Required, StringLength(30)]
         string Name,
 
         [Required]
@@ -29,8 +29,8 @@ namespace BlazorApp.Core{
         [Required]
         string SkillRequirementDescription,
 
-        /* [Required]
-        SupervisorDTO Supervisor, */
+        [Required]
+        SupervisorDTO Supervisor,
 
         [Required]
         ISet<WorkDay> WorkDays,
@@ -39,6 +39,6 @@ namespace BlazorApp.Core{
         ISet<Location> Locations,
 
         [Required]
-        bool isThesis
+        bool isThesis */
     );
 }

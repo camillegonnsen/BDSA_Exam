@@ -8,10 +8,12 @@
 
   <ItemGroup>
     <SupportedPlatform Include="browser" />
-  </ItemGroup>
-
+<!--     <ProjectReference Include="..\BlazorApp.Core\BlazorApp.Core.csproj">
+ -->  </ItemGroup>
+<!-- 
   <ItemGroup>
-    <ProjectReference Include="..\BlazorApp.Infrastructure\BlazorApp.Infrastructure.csproj"/>
-  </ItemGroup>
+    <ProjectReference Include="..\BlazorApp.Core\BlazorApp.Core.csproj">
+     <ProjectReference Include="..\BlazorApp.Infrastructure\BlazorApp.Infrastructure.csproj"/>
+ </ItemGroup> -->
 
 </Project>
