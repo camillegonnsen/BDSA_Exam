@@ -3,18 +3,20 @@ using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using BlazorApp.Infrastructure;
 
 namespace Infrastructure{
 
-public class ProjectBankContext : DbContext
+public class ProjectBankContext : DbContext, IProjectBankContext
 {
-    public DbSet<Project> projects { get; set; }
-    public DbSet<Student> students {get;set;}
+    public DbSet<Project> Projects => Set<Project>();
+    public DbSet<Student> Students => Set<Student>();
+    
     //public DbSet<Keyword> keywords {get;set;}
 
     public string DbPath { get; private set; }
 
-    public ProjectBankContext(DbContextOptions<ProjectBankContext> options): base(options)
+        public ProjectBankContext(DbContextOptions<ProjectBankContext> options): base(options)
     {
         var folder = Environment.SpecialFolder.LocalApplicationData;
         var path = Environment.GetFolderPath(folder);

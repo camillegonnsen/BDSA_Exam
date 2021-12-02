@@ -1,0 +1,32 @@
+using BlazorApp.Core;
+
+namespace BlazorApp.Infrastructure{
+
+    public class ProjectRepository : IProjectRepository
+    {
+        public int Create(ProjectDTO project)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Delete(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ProjectDTO Read(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IReadOnlyCollection<ProjectDTO> ReadAllNames()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Update(ProjectDTO project)
+        {
+            throw new NotImplementedException();
+        }
+    }
+}
